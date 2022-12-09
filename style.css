@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto:wght@300;400;700&family=Signika&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;;
+    box-sizing: border-box;
+}
+
+
+
+.navBar
+
+{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    height: 4em;
+}
+
+
+
+.inputSearch {
+  padding-bottom: 0.3em;
+  padding-left: 0.2em;
+  width: 44em;
+  height: 3em;
+  border: none;
+}
+
+.inputSearch::placeholder
+{
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+
+
+.navBar a .logoMl {
+  height: 9em;
+  width: 8em;
+  padding-top: 0.7em;
+}
+
+.buscar
+
+{
+    border: none;
+    position: absolute;
+    margin-left: -3.8em;
+    margin-top: -0.5em;
+    height: 3.5em;
+    background: none;
+
+}
+
+
+.lupaImg
+{
+    height: 4em;
+    padding-top:.1em;
+    background: none;
+}
+
+
+
+
+
+.navBar .sub
+{
+    
+  background-color: rgb(85, 14, 85);
+  border-radius: .4em;
+  color: white;
+  text-decoration: none;
+  height: 1.6em;
+  width: 14em;
+  padding-left: .9em;
+  display: flex;
+  align-items: center;
+   
+    
+}
+
+.navBar .sub .subPrecio
+{
+    padding-left: .2em;
+    padding-right: .2em;
+    font-weight: 700;
+}
+
+input.inputSearch:hover
+{
+
+
+  border: none;
+
+ 
+}
+
+/*-------Nav2--------*/
+
+
+.menu-bar
+{
+    display: none;
+}
+
+header{
+    width: 100%;
+}
+
+header nav
+{
+    background-color: yellow;
+    z-index: 1000;
+}
+
+header nav ul
+{
+    list-style: none;
+}
+
+header nav ul li
+{
+    display: inline-block;
+    position: relative;
+}
+
+
+
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.774);
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 20px;
+    position: relative;
+    left: 38em;
+    text-transform: capitalize;
+}
+
+header nav ul li a:hover
+{
+    color: black;
+}
+
+.menu-icon {
+    height: 20px;
+ 
+}
+
+.header nav ul li a span
+{
+    margin-right: 10px;
+}
+
+header nav ul li:hover .children
+{
+    display: block;
+}
+
+header nav ul li .children {
+  display: none;
+  background: yellow;
+  position: absolute;
+  width: 164px;
+  z-index: 1000;
+  left: 39em;
+}
+
+header nav ul li .children a {
+  display: block;
+  position: relative;
+  left: -1em;
+  text-transform: capitalize;
+}
+
+
+.desplegable img{
+    height: 10px;
+}
+
+.children ul li a 
+{
+  left: 2em;
+}
+
+
+
+
+
+/*-------------------------------------------------CarrucelAnuncio-------------------------------------*/
+.imgAnuncio {
+  height: 21em;
+  padding-top: 0em;
+  width: 100%;
+ 
+}
+
+.swiper-pagination{
+    bottom: 10px;
+  }
+ 
+
+
+
+
+
+
+  /*---------------------------------------------swipperCards--------------------------------------------*/
+  
+  /*-------botones--------*/
+
+.pre-btn{
+    transform:rotate(180deg);
+}
+
+.nxt-btn
+{
+    right: 0;
+    margin-bottom: 1em;
+}
+
+
+.nxt-btn img,
+.pre-btn
+img
+{
+    height: 3.5em;
+    background: none;
+  
+    
+}
+
+
+.nxt-btn:hover img,
+.pre-btn:hover
+img
+{
+    opacity: 1;
+    background: none;
+   
+}
+
+
+.nxt-btn,
+.pre-btn
+{
+    border: none;
+    width: 10vh;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+    background: none;
+    opacity: 0;
+
+}
+
+.nxt-btn:hover,
+.pre-btn:hover{
+  opacity: 1;
+}
+
+.showArrow
+{
+  opacity: 1;
+}
+
+  /*-------imagen--------*/
+  .product-image img {
+    height: 10em;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.thumb-producto
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  /*-------Info producto--------*/
+
+  .nombre-producto
+  {
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  p.descripcion-producto 
+  {
+    font-size: 1em;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  span.price p
+  {
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+  }
+ /*-------general--------*/
+
+  .productos
+  {
+    position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+  }
+
+  .categoria-producto
+  {
+    padding-left:.5em;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-weight: 500;
+  }
+
+  .contenedor-productos {
+    padding: 0px 10vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2em;
+    height: 20em;
+    padding-top: 0.5em;
+    width: 100vw;
+     align-items: baseline;
+    margin-bottom: 10em;
+    
+  }
+
+  .contenedor-productos::-webkit-scrollbar
+  {
+    display: none;
+  }
+
+  .product-card {
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+}
+
+  .product-card:hover
+  {
+    transform: scale(1.1);
+    box-shadow: -2px 4px 4px 1px rgb(0 0 0 / 20%);
+  }
+
+  .info-producto
+  {
+    width: 100%;
+    padding-top: 1em;
+  }
+
+  .collection-container
+  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+  }
+
+  .collection
+  {
+    position: relative;
+  }
+
+  .collection img
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .collection p 
+  {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+  grid-column: span 2;
+  margin-bottom:10px;
+}
+
+  
+
+
+  /*---------------------------------------------LinksdeCategorias--------------------------------------------*/
+.link-categorias
+{
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  text-transform: capitalize;
+ 
+  
+}
+  .contenedor-categorias
+{
+  display: grid;
+  margin-top: 1em;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 10em;
+  padding-left: 10em;
+}
+
+.carta-categorias
+{
+  text-align: center;
+  margin: 10px;
+  padding-top: 1em;
+  padding: 4em;
+  
+}
+
+
+.carta-categorias:hover
+{
+  background-color: rgb(16, 166, 192);
+  cursor: pointer;
+}
+
+.categorias-populares {
+  font-size: 2em;
+  padding-left: .5em;
+  margin-top: 2em;
+  font-weight: 500;
+}
+
+.img-categorias {
+  height: 5em;
+}
+
+.link-name a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  text-transform: capitalize;
+ 
+}
+
+ /*-----------------Botones-----------*/
+ .btn-prev img,
+ .btn-nxt img
+ {
+  height: 3.5em;
+  background: none;
+ }
+
+ .btn-nxt,
+ .btn-prev
+{
+  border: none;
+  width: 15vw;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  opacity: 0;
+
+}
+
+.btn-nxt:hover,
+ .btn-prev:hover
+ {
+  opacity: 1;
+  background: none;
+ }
+
+
+.btn-nxt
+{
+  right: 0;
+}
+
+
+ .btn-prev{
+  transform: rotate(180deg);
+ }
+
+ /*---------------------------------------------footer--------------------------------------------*/
+ 
+ 
+ .footer
+ {
+  margin-top: 2em;
+ }
+
+ .links-footer
+ {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+ }
+
+ .footer a
+ {
+ 
+  font-size: .8em;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-left: .2em;
+  opacity: .9;
+  text-align: center;
+ }
+
+ .footer a:hover
+
+{
+  opacity: 1;
+
+}
+
+
+ .derechos
+ {
+  padding-top: 1em;
+  font-size: .7em;
+  opacity: .7;
+  text-align: center;
+ }
+
+ .imgPromo
+ {
+  width: 100%;
+  height: 20em;
+  border-radius:1em;
+ }
+
+
+
+
+
+
+  /*---------------------------------------------MediaQuerys--------------------------------------------*/
+
+ @media (min-width:320px){
+/*----------------navegador-------------------*/
+  .navBar
+  {
+    height: 4em;
+    gap: 1.2em;
+  }
+
+
+.inputSearch {
+  width: 20em;
+  padding: 0;
+  font-size: .6em;
+  position: relative;
+ 
+  right: -1em;
+}
+
+.inputSearch::placeholder
+{
+  font-size: small;
+}
+
+.navBar a .logoMl {
+  height: 4em;
+  width: 3em;
+}
+
+.logo-mercado{
+  position: absolute;
+  left: 0;
+  top: -.2em;
+}
+
+  .sub{
+    visibility: hidden;
+  }
+
+ 
+  .buscar {
+    position: relative;
+    top: -0.6em;
+    right: 11.95em;
+    height: 2.2em;
+    top: .83em;
+}
+
+.contenedor-productos{
+  height: 15em;
+}
+
+
+.lupaImg{
+  height: 2.2em;
+  background-color: white;
+}
+
+  .sub{
+    position: absolute;
+    height: .8em;
+    font-size: .8em;
+  }
+
+  .bt-menu {
+    position: absolute;
+    background: none;
+    border: none;
+    /* right: 18em; */
+    /* top: -18.5em; */
+    top: 1.9em;
+    right: 12px;
+}
+
+.menu-icon{
+  height: 23px;
+}
+ 
+.menu-navR{
+    position: absolute;
+    background-color: whitesmoke;
+    left: -100%;
+  }
+
+.show{
+    left: 0%;
+
+  }
+
+.link-menu{
+    left: 0;
+  }
+
+.menu-navR ul li{
+    display: block;
+  }
+
+header nav ul li .children {
+    background: white;
+    left: 7em;
+    top: 2.2em;
+}
+
+
+/*------------------------- Anuncios carousel----------------*/
+  .imgAnuncio
+  {
+    height: 13em;
+  }
+
+  .contenedor-productos {
+    margin-bottom: 5em;
+}
+
+.imgPromo {
+  
+  height: 12em;
+  
+}
+
+.product-image img {
+  height: 7em;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nombre-producto{
+  font-size: 1em;
+}
+
+span.price p {
+  font-size: 1em;
+  
+}
+
+.categoria-producto{
+  font-size: 1.2em;
+}
+
+/*--------contenedor de categorias--------------*/
+.contenedor-categorias{
+  padding: 0;
+}
+
+.carta-categorias{
+  padding: 0;
+}
+
+.img-categorias {
+  height: 2.5em;
+}
+
+.link-name a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.categorias-populares{
+  font-size: 1.2em;
+  padding: 0;
+}
+
+/*--------footer-------------*/
+
+.links-footer {
+ 
+  gap: .2em;
+}
+
+.footer a {
+  font-size: .4em;
+  padding: .2em;
+  
+}
+
+.derechos {
+  padding-top: 1em;
+  font-size: .4em;
+  opacity: .7;
+  text-align: left;
+}
+
+
+ }
+
+ 
+ /*---------------------------------------------------*/
+ @media(min-width:375px) and (max-width:424px){
+  .bt-menu{
+    left:24em
+  }
+
+  .navBar a .logoMl {
+    height: 4em;
+    width: 3em;
+}
+
+
+ }
+
+
+
+ /*---------------------------------------------------*/
+ @media(min-width:425px) and (max-width:724px){
+
+  .bt-menu {
+    left: 26em;
+}
+
+
+.navBar a .logoMl {
+  height: 5em;
+  width: 4em;
+
+}
+
+.logo-mercado {
+  top: -.5em;
+  left: 1.2em;
+}
+
+
+ }
+
+
+
+ /*--------------------------------------------------------------*/
+ @media(min-width:725px) and (max-width:767px){
+  .navBar a .logoMl {
+ 
+  left: -13em;
+  
+}
+
+.navBar a .logoMl {
+  height: 5em;
+  width: 4em;
+  left: -5em;
+  top: -.2em;
+}
+
+.navBar {
+height: 7em;
+gap: 1.2em;
+}
+
+.inputSearch{
+  width: 35em;
+  right: -1em;
+  font-size: .8em;
+  bottom: 1em;
+  
+}
+
+.inputSearch::placeholder{
+  font-size: 1.5em;
+}
+
+.lupaImg{
+  height: 2.9em;
+}
+
+.buscar {
+  position: relative;
+  top: .1em;
+  right: 31.66em;
+}
+
+.bt-menu{
+  left:48em;
+  top:2.6em;
+}
+
+.img-categorias {
+  height: 4em;
+}
+
+.link-name a{
+  font-size: 1.4em;
+}
+
+.categorias-populares{
+  font-size: 2em;
+}
+
+.categoria-producto{
+  font-size: 2em;
+}
+
+.footer a {
+  font-size: .8em;
+}
+
+.derechos{
+  font-size: 1em;
+}
+
+.imgAnuncio {
+  height: 20em;
+}
+
+.menu-icon {
+  height: 25px;
+}
+
+.logo-mercado {
+  position: fixed;
+  left: 17px;
+  top: .1em;
+}
+
+
+ }
+
+
+
+/*------------------------------------------------------------------------------*/
+ @media(min-width:768px) and (max-width:1023px){
+  .menu-icon {
+    height: 25px;
+}
+
+.bt-menu {
+ 
+    width: 2em;
+    right: left;
+    position: absolute;
+    left: 46em;
+
+}
+
+.derechos {
+  font-size: .7em;
+}
+
+.footer a {
+  font-size: .8em;
+  padding: 1em;
+}
+
+p.descripcion-producto {
+  font-size: 1.4em;
+  
+}
+
+.nombre-producto {
+  font-size: 1.5em;
+ 
+}
+
+.logo-mercado {
+  top: 0em;
+  left: 5em;
+}
+
+.inputSearch{
+  width: 40em;
+}
+
+.buscar {
+  position: relative;
+  top: -0.6em;
+  right: 26.4em;
+}
+
+.logo-mercado{
+  top: -.5em;
+}
+
+ }
+
+
+ /*-----------------------------------------------*/
+ @media(min-width:1024px) and (max-width:1439px){
+
+.menu-navR{
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  background-color: yellow;
+}
+
+.navBar {
+  height: 4em;
+  gap: 1.2em;
+}
+
+.logo-mercado {
+  top: -10px;
+  left: 1.2em;
+  position: absolute;
+}
+
+.menu-navR ul li {
+  display: inline-block;
+  left: 12em;
+  height: 3em;
+}
+
+  .inputSearch {
+    width: 50em;
+    right: 4em;
+    bottom: 0;
+  
+}
+
+::placeholder{
+  font-size: 1em;
+}
+
+
+
+.navBar a .logoMl {
+  height: 5.5em;
+  width: 5em;
+  left: -5em;
+  top: -.2em;
+}
+
+.lupaImg{
+  height: 2.2em; 
+}
+
+.buscar{
+  right: 37.2em;
+  height: 2.2em;
+  top:.8em;
+}
+
+.bt-menu{
+  visibility: hidden;
+}
+
+.sub{
+  visibility: visible;
+  right: 3em;
+  font-size: .9em;
+  right: 1em;
+  top: 25px;
+
+
+}
+
+header nav ul li .children a {
+  display: block;
+  position: relative;
+  left: -12em;
+  text-transform: capitalize;
+  z-index: 10;
+}
+
+.derechos {
+  font-size: .9em;
+}
+
+.contenedor-categorias{
+  height: 20em;
+  align-items: center;
+}
+
+.footer a {
+  font-size: 1em;
+  padding: 1.2em;
+}
+
+ }
+
+
+/*---------------------------------------------------*/
+
+@media(min-width:1440px) and (max-width:2559px){
+  .logo-mercado {
+    top: -1em;
+    left: 8.2em;
+}
+
+
+.form-nav{
+  width: 50em;
+}
+
+.inputSearch {
+  bottom: -16px;
+  right: 0;
+  width: 100%;
+  height: 3em;
+  font-size: .7em;
+}
+
+.logo-mercado {
+  top: -1em;
+  height: 5em;
+  position: absolute;
+  left: 15em;
+  width: 4em;
+  top: -11px;
+}
+
+.navBar a .logoMl {
+  height: 5em;
+  width: 4em;
+}
+
+
+
+.buscar {
+  /* position: relative; */
+  top: -11px;
+  right: -18.85px;
+  height: 2.5em;
+}
+
+.lupaImg {
+  height: 2.5em;
+  background-color: white;
+}
+
+
+.sub{
+  right: 5em;
+}
+
+
+.imgPromo{
+  height: 20em;
+}
+
+.imgAnuncio{
+  height: 25em;
+}
+
+.footer a {
+  font-size: 1em;
+  padding: 2em;
+}
+
+.categorias-populares {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.carta-categorias{
+  margin-bottom: 3em;
+}
+
+.menu-navR ul li {
+  display: inline-block;
+}
+
+
+.bt-menu{
+  visibility: hidden;
+}
+
+
+
+.menu-navR {
+  display: flex;
+  left:0%;
+  height: 3em;
+  width: 100%;
+  font-size: .9em;
+  background-color: yellow;
+  justify-content: center;
+}
+
+.navBar {
+  height: 4em;
+  gap: 1.2em;
+}
+
+header nav ul li .children {
+  background: white;
+  left: 7em;
+  top: 2.2em;
+  width: 120%;
+}
+
+.imgPromo {
+  height: 26em;
+}
+
+.sub{
+  visibility: visible;
+  right: 11em;
+}
+
+.navBar .sub{
+  width: 15em;
+  font-size: .9em;
+}
+
+.derechos{
+  font-size: 1em;
+}
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------*/
+@media(min-width:2560px){
+.sub{
+font-size: 1.5em;
+ top: 1.5em;
+}
+
+.inputSearch {
+ 
+  font-size: 1em;
+}
+
+.inputSearch {
+ width: 50em;
+  top: .5em;
+}
+
+
+.inputSearch::placeholder{
+  font-size: 1.4em;
+}
+
+.buscar {
+  right: 85.8em;
+  top: .9em;
+  height: 4.5em;
+}
+
+.sub{
+  top: 2em;
+  right: 19em;
+}
+
+header nav ul li a{
+  font-size: 1.5em;
+}
+
+.lupaImg{
+  height:4.5em
+}
+
+.imgPromo {
+  height: 25em;
+}
+
+.img-categorias {
+  height: 6em;
+}
+
+.link-name a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.contenedor-categorias {
+  padding: 0;
+  height: 35em;
+  align-items: center;
+}
+
+.categorias-populares {
+  font-size: 2em;
+  padding: 0;
+}
+
+.footer a {
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.derechos {
+  padding-top: 1em;
+  font-size: 1.4em;
+  opacity: .7;
+  text-align: left;
+}
+
+.categoria-producto {
+  font-size: 2em;
+}
+
+.imgAnuncio {
+  height: 25em;
+}
+
+.product-image img {
+  height: 15em;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenedor-productos {
+
+  height: 30em;
+ 
+}
+
+.nombre-producto {
+  font-size: 2em;
+}
+
+
+span.price p {
+  font-size: 2em;
+ 
+}
+
+p.descripcion-producto {
+  font-size: 2em;
+ 
+}
+
+.inputSearch {
+  width: 60em;
+  top: -0.5em;
+  font-size: 1.2em;
+}
+
+.logo-mercado {
+  position: absolute;
+  left: 23em;
+  top: -10px;
+  height: 7em;
+}
+
+.navBar a .logoMl {
+  height: 7em;
+  width: 8em;
+}
+
+
+.bt-menu{
+  visibility: hidden;
+}
+
+.menu-navR {
+  position: absolute;
+  background-color: yellow;
+  /* left: -100%; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  left: 0%;
+}
+
+header nav ul {
+
+  display: flex;
+}
+
+.sub{
+  visibility: visible;
+}
+
+.navBar .sub{
+    right: 9em;
+    top: 1.3em;
+
+}
+
+}
